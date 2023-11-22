@@ -40,7 +40,7 @@ class _MyhomeState extends State<Myhome> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "NanApp",
+          "รายรับรายจ่ายของนารีรัตน์",
           style: TextStyle(color: Colors.white, fontSize: 30),
         ),
       ),
@@ -186,6 +186,29 @@ class _MyhomeState extends State<Myhome> {
                       ),
                     ),
                   )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 8,
+            ),
+            // แสดงเงินคงเหลือ
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.grey,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              height: 100,
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Image.asset(
+                      'assets/images/milo.jpg', // เปลี่ยนเป็น path ที่ถูกต้อง
+                      width: 200, // ปรับขนาดตามต้องการ
+                      height: 200,
+                    ),
+                  ),
                 ],
               ),
             )
